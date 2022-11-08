@@ -35,10 +35,10 @@ export default {
                 action: '/a/operator/chats/layout/login',
                 fields: {
                     email: {
-                        value: 'paulsmith.front@gmail.com',
+                        value: '',
                     },
                     password: {
-                        value: 'z9WXVAJfya',
+                        value: '',
                     },
                 },
             },
