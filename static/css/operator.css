@@ -1,0 +1,515 @@
+html,
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: block;
+  background: #fff;
+  color: #000;
+  min-width: 800px;
+  min-height: 600px;
+  overflow: overlay;
+}
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.page-footer-inner span.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#main_spinner {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+#main_spinner i {
+  margin-top: 10%;
+  font-size: 50px;
+}
+#init_block,
+#extension_reload_msg {
+  margin: 100px 20%;
+}
+@media screen and (min-width: 1024px) {
+  #init_block,
+  #extension_reload_msg {
+    margin: 100px 30%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #init_block {
+    margin: 100px 35%;
+  }
+}
+#current_user {
+  cursor: pointer;
+}
+#current_user i {
+  margin-right: 5px;
+}
+.page-header.navbar {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.page-header.navbar .top-menu {
+  float: none;
+}
+.page-header.navbar .top-menu .dropdown-quick-sidebar-toggler > .dropdown-toggle {
+  padding: 19px 10px 10px !important;
+}
+.page-header.navbar .top-menu .dropdown-quick-sidebar-toggler > .dropdown-toggle i:before {
+  content: "\E182";
+}
+.page-header.navbar .top-menu .navbar-nav {
+  margin-right: 0;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-menu:after {
+  right: 86px;
+}
+.page-header.navbar .top-menu .phone_mute_call {
+  font-size: 20px;
+  padding: 11px;
+  cursor: pointer;
+}
+.page-header.navbar .page-logo {
+  margin-right: 13px;
+  width: auto;
+}
+.page-header.navbar .page-logo img {
+  margin-left: 0;
+}
+.page-header.navbar .page-logo .logo-default {
+  margin-top: 8px;
+}
+.dropdown-menu {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+#company .dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 0;
+}
+#user_status .btn {
+  margin-top: 8px;
+}
+#user_status .away_label {
+  padding: 8px 16px;
+  color: #6f6f6f;
+}
+#user_status .away_status {
+  padding-left: 16px;
+}
+#popup_actions {
+  position: absolute;
+  right: 9px;
+  top: 17px;
+}
+#popup_actions i {
+  font-size: 20px;
+  color: #aaa;
+  cursor: pointer;
+  margin-right: 5px;
+}
+#popup_actions i:hover {
+  color: #eee;
+}
+.nav-pills > li {
+  float: none;
+}
+.nav-pills.disabled {
+  opacity: 0.5;
+}
+.nav-pills.disabled i {
+  color: #aaa;
+}
+#verto_disconnected {
+  font-size: 20px;
+  color: #e43a45;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#verto_disconnected:before {
+  content: '';
+  width: 55%;
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  border-bottom: 2px solid #e43a45;
+  transform: skewY(-45deg);
+}
+/* call actions floating controls */
+.quick-nav ul {
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+.quick-nav ul > li a > i {
+  right: 22px;
+}
+.recent_calls_second_number {
+  margin-left: 19px;
+}
+.recent_calls_queue_name {
+  font-size: 0.7em;
+  color: #808080;
+  margin-left: 19px;
+}
+.recent_calls_on_hold {
+  cursor: pointer;
+}
+.recent_calls_conference {
+  cursor: pointer;
+  position: relative;
+}
+.recent_calls_conference .badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+.recent_calls_add_number {
+  visibility: hidden;
+}
+.recent_calls_list .call_row:hover .recent_calls_add_number {
+  visibility: visible;
+}
+.recent_calls_table .call_type {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.recent_calls_list > .call_row {
+  cursor: pointer;
+  padding: 5px 0;
+  margin: 0;
+}
+.recent_calls_list > .call_row.even {
+  background-color: rgba(0,0,0,0.05);
+}
+.recent_calls_list > .call_row:hover {
+  background-color: #eef1f5;
+}
+.recent_calls_list .call_type {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.recent_calls_list .btn {
+  margin-right: 10px;
+}
+.recent_calls_loading {
+  font-size: 28px;
+}
+.call_row {
+  cursor: pointer;
+}
+.call_row div.call_type {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
+  padding-left: 1px;
+  opacity: 0.6;
+  position: relative;
+}
+.call_row td:first-child {
+  width: 50px;
+}
+.call_row .main_name {
+  font-size: 18px;
+}
+.call_row .secondary_name {
+  font-size: 0.7em;
+  color: #808080;
+}
+.call_row .relative {
+  position: relative;
+}
+.call_row .ribbon {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #fff;
+  padding: 5px 10px;
+}
+.call_row small {
+  display: block;
+}
+#call_schedule_modal .list-group-item-text .btn {
+  margin-bottom: 5px;
+}
+#call_schedule_modal .list-group {
+  text-align: right;
+  margin-bottom: 0;
+}
+#call_schedule_modal .list-group-item-text {
+  display: inline-block;
+}
+#call_schedule_modal .list-group-item h4 {
+  display: inline;
+  margin-right: 10px;
+  float: left;
+}
+#call_schedule_modal .schedule_field {
+  text-align: right;
+  margin-bottom: 10px;
+}
+#call_schedule_modal .schedule_field label {
+  float: left;
+  margin-top: 7px;
+}
+#call_schedule_modal .schedule_field .input-group-addon {
+  cursor: pointer;
+}
+#call_schedule_modal .datepicker {
+  margin: 0 auto;
+}
+#call_schedule_modal .datepicker .active {
+  background-color: #fff !important;
+}
+#call_schedule_modal .timedial {
+  margin-top: 10px;
+}
+#call_schedule_modal .dtime-back {
+  float: left;
+}
+#call_schedule_modal .form-control[readonly] {
+  background-color: #fff;
+}
+.popover .conference_time {
+  margin-left: 15px;
+}
+#main_tabs .tab-pane {
+  position: relative;
+}
+#main_tabs .tab-content .tab-content .tab-pane,
+#main_tabs #active_calls_tab {
+  background: rgba(240,240,240,0.3);
+  padding: 5px;
+}
+#main_tabs .project_service_tabs {
+  position: absolute;
+  top: 0;
+  left: -65px;
+}
+#main_tabs .queue_count {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  padding: 2px 5px;
+}
+#main_tabs .queue_count .label {
+  padding: 2px;
+}
+#main_tabs > ul > li > a {
+  padding-right: 25px;
+}
+#main_tabs > ul > li > .queue_count {
+  top: 13px;
+}
+#main_tabs > ul.nav {
+  margin-bottom: -1px;
+}
+#main_tabs .contacts_filter {
+  padding-left: 77px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+#main_tabs .contacts_filter > a {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+}
+#main_tabs .contacts_search_fields .badge {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+#main_tabs .active-call-select {
+  cursor: pointer;
+  margin: 0;
+  padding: 5px 0;
+}
+#main_tabs .active-call-select:hover {
+  background-color: #eef1f5;
+}
+#main_tabs .nav-tabs {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+#main_tabs .nav-tabs>li.active>a,
+#main_tabs .nav-tabs>li.active>a:focus,
+#main_tabs .nav-tabs>li.active>a:hover {
+  border: 0;
+}
+#main_tabs .alert-report {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#main_tabs .dialers-pane .nav li.active {
+  background-color: #fff;
+}
+#main_tabs .dialers-pane .tab-pane {
+  background: rgba(0,0,0,0) !important;
+}
+#main_tabs .dialers-pane .edit_dialer {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+#main_tabs .dialers-pane td:not(.dialer_task_details) {
+  white-space: nowrap;
+}
+#main_tabs .dialers-pane .dialer_task_details div {
+  font-size: 10px;
+}
+#main_tabs .dialers-pane .dialer_tasks_count_info {
+  margin-top: 12px;
+  margin-right: 60px;
+}
+#main_tabs .nav-pills>li+li {
+  margin-left: 0;
+}
+.users_online .user_group {
+  opacity: 0.6;
+}
+.page-quick-sidebar-wrapper {
+  overflow-y: auto;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar li.media {
+  overflow: auto;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .comp_name {
+  margin-top: 15px !important;
+  margin-left: 15px !important;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .dialpad .btn-group-justified .btn {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_grid div[class^='col-md-'] {
+  width: 100%;
+  border-color: #555;
+  border: 0;
+  border-bottom: 1px solid #555;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_grid div.row:last-child div[class^='col-md-']:last-child {
+  border-bottom: 0;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_grid .panel-default {
+  background-color: #323e48;
+  color: #eee;
+  border-color: #555 !important;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_grid .panel-default a {
+  color: #4bacff;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_grid label.contact_type {
+  color: #aaa;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_drop_area {
+  border: 1px solid #99a8b5;
+  color: #99a8b5;
+  padding: 12px 15px;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_drop_area.active {
+  border-color: #1bbc9b;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .contact_drop_area i {
+  float: left;
+  font-size: 30px;
+  padding: 10px 10px 5px 0;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .active_contact .fa-spinner {
+  font-size: 28px;
+  color: #eee;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .clear_phone {
+  z-index: 10;
+  cursor: pointer;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar dl.horizontal > div {
+  margin-top: 5px;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar dl.horizontal dt {
+  display: inline-block;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar dl.horizontal dd {
+  display: inline-block;
+  float: right;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .alert {
+  margin: 0;
+}
+.page-quick-sidebar-toggler > i:before {
+  content: "\E182" !important;
+  opacity: 0.6;
+}
+#contact_drag_icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  color: #f7ca18;
+  z-index: 100000;
+}
+#contact_drag_icon.active {
+  color: #1bbc9b;
+}
+#toast-container > div {
+  width: 295px;
+}
+#sidebar_redirect_accordion .panel {
+  background-color: rgba(0,0,0,0);
+}
+#sidebar_redirect_accordion .panel-heading {
+  color: #fff;
+}
+#sidebar_redirect_accordion .panel-body {
+  border: 0;
+}
+#sidebar_redirect_accordion .panel-users {
+  border: 1px solid #5c9bd1;
+}
+#sidebar_redirect_accordion .panel-queues {
+  border: 1px solid #26c281;
+}
+#sidebar_redirect_accordion .panel-number {
+  border: 1px solid #f7ca18;
+}
+#dragged_contact_icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  color: #f7ca18;
+  z-index: 100000;
+}
+#dragged_contact_icon.active {
+  color: #1bbc9b;
+}
+#bug_report .link {
+  color: #98a6ba;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.holiday_bg .form-control {
+  background: #fff !important;
+}
+.holiday_bg .page-content .nav-tabs > li.active > a {
+  background: rgba(240,240,240,0.3);
+}
+.contact-pagination {
+  margin: 0 0 10px 14px;
+}

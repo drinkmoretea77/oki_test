@@ -1,0 +1,15 @@
+/* корректировка корявого стиля метроника для кнопок в input-group */
+
+.input-group > .input-group-btn > .btn:not(:hover) {
+    box-shadow: none !important;
+}
+.input-group > .input-group-btn:last-child > .btn {
+    border-radius: 0 4px 4px 0 !important;
+}
+.input-group > .input-group-btn:first-child > .btn {
+    border-radius: 4px 0 0 4px !important;
+}
+
+.table-advance td.highlight div.default {
+    border-left: 2px solid #bac3d0;
+}

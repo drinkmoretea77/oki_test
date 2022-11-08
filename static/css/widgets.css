@@ -1,0 +1,715 @@
+/*All Widgets*/
+
+.widget-wrap{
+    border: none;
+    background: none;
+}
+
+
+.widget-wrap .ui-resizable-se,
+.widget-wrap .ui-resizable-s {
+    display: none !important;
+}
+
+.widget-wrap .ui-resizable-e {
+    width: 22px;
+    height: 94%;
+    background: rgba(0,0,0,.03);
+    right: 12px;
+    opacity: 0;
+}
+
+.widget-wrap .ui-resizable-e:hover {
+    opacity: 1;
+}
+
+.widget-wrap .ui-resizable-e:after {
+    content: "::";
+    font-size: 20px;
+    color: #7c8793;
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    top: 148px;
+    left: 5px;
+}
+
+.widget-wrap .ui-resizable-e:before {
+    content: "::";
+    font-size: 20px;
+    color: #7c8793;
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    top: 166px;
+    left: 5px;
+}
+
+
+.widget-wrap .portlet-title {
+    margin-bottom: 0;
+}
+
+
+.widget-wrap .portlet-title .caption .btn-group.dropdown .btn {
+    padding: 2px 3px;
+}
+
+.widget-wrap .portlet-body .scroller {
+    padding-top: 10px;
+}
+
+.widget-wrap.col-md-7 .tab-content h3{
+    font-size: 1.4em;
+}
+.widget-wrap.col-md-6 .tab-content h3 {
+    font-size: 1.3em;
+}
+
+.widget-wrap.col-md-6 .tab-content h4{
+    font-size: 1.2em;
+}
+.widget-wrap.col-md-5 .tab-content h3,
+.widget-wrap.col-md-5 .tab-content h4 {
+    font-size: 1.2em;
+}
+.widget-wrap.col-md-4 .tab-content h3,
+.widget-wrap.col-md-4 .tab-content h4 {
+    font-size: 1.1em;
+}
+
+.widget-wrap .change-size {
+    min-width: 106px;
+}
+
+.widget-wrap .change-size .badge {
+    opacity: 0.6;
+}
+
+.widget-wrap .change-size .badge.hb {
+    opacity: 1;
+}
+
+.widget-wrap .change-size .badge.active-size {
+    -webkit-box-shadow: inset 0px 0px 0px 2px rgba(232,126,4,1);
+    -moz-box-shadow: inset 0px 0px 0px 2px rgba(232,126,4,1);
+    box-shadow: inset 0px 0px 0px 2px rgba(232,126,4,1);
+
+}
+
+.widget-wrap .wh-1 {
+    height: 270px;
+}
+
+.widget-wrap .wh-1-in-chart {
+    height: 165px;
+}
+
+.widget-wrap .wh-1-in-chart2 {
+    height: 157px;
+}
+
+.widget-wrap .wh-1-in-table {
+    height: 197px;
+}
+
+.widget-wrap .wh-1-in-table2 {
+    height: 175px;
+}
+
+.widget-wrap .wh-2 {
+    height: 648px;
+}
+
+.widget-wrap .wh-2-in-chart {
+    height: 518px;
+}
+
+.widget-wrap .wh-2-in-chart2 {
+    height: 510px;
+}
+
+.widget-wrap .wh-2-in-table {
+    height: 550px;
+}
+
+.widget-wrap .wh-2-in-table2 {
+    height: 528px;
+}
+
+.widget-wrap .wh-3 {
+    height: 1026px;
+}
+
+.widget-wrap .wh-3-in-chart {
+    height: 896px;
+}
+
+.widget-wrap .wh-3-in-chart2 {
+    height: 888px;
+}
+.widget-wrap .wh-3-in-table {
+    height: 928px;
+}
+
+.widget-wrap .wh-3-in-table2 {
+    height: 906px;
+}
+
+.widget-wrap .tabs-left .tooltip .tooltip-inner {
+    white-space: nowrap !important;
+}
+
+.widget-wrap h6 .tooltip .tooltip-inner {
+    min-width: 140px !important;
+}
+
+.widget-wrap .tooltip .tooltip-inner{
+    background-color: #364150;
+}
+.widget-wrap .tooltip.left .tooltip-arrow
+{
+    border-left-color:#364150;
+}
+.widget-wrap .tooltip.right .tooltip-arrow
+{
+    border-right-color:#364150;
+}
+.widget-wrap .tooltip.top .tooltip-arrow
+{
+    border-top-color:#364150;
+}
+.widget-wrap .tooltip.bottom .tooltip-arrow
+{
+    border-bottom-color:#364150;
+}
+
+.widget-wrap .popover {
+    border: 1px solid #d2cbde;
+    width: auto !important;
+}
+
+.widget-wrap h6 .popover {
+    min-width: 200px;
+}
+
+.widget-wrap table td a:hover {
+    text-decoration: underline;
+}
+
+.widget-wrap.col-md-12 .tdchart .popover,
+.widget-wrap.col-md-11 .tdchart .popover,
+.widget-wrap.col-md-10 .tdchart .popover,
+.widget-wrap.col-md-9 .tdchart .popover,
+.widget-wrap.col-md-12 .dashboard-stat .popover,
+.widget-wrap.col-md-11 .dashboard-stat .popover,
+.widget-wrap.col-md-10 .dashboard-stat .popover,
+.widget-wrap.col-md-9 .dashboard-stat .popover{
+    min-width: 200px;
+}
+
+.widget-wrap .tabs-left .popover,
+.widget-wrap label .popover {
+    white-space: nowrap !important;
+}
+
+
+
+
+.widget-wrap .amcharts-chart-div a {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0 !important;
+    width: 0 !important;
+}
+
+.widget-wrap .amChartsLegend.amcharts-legend-div {
+    text-transform: uppercase;
+}
+
+
+.widget-wrap .nav-tabs>li>a {
+    padding: 8px;
+}
+.widget-wrap.col-md-6 .nav-tabs a {
+    font-size: 85%;
+}
+
+.widget-wrap .carousel-caption h6 {
+    margin-right: 40px;
+    margin-top: 7px;
+}
+
+.widget-wrap .pager {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    margin: 0;
+}
+.widget-wrap .carousel-control {
+    background: none !important;
+    background-color: #fff !important;
+    position: relative;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+    text-shadow: none;
+    color: #337ab7;
+    font-size: 12px;
+    opacity: 1;
+    padding: 4px;
+}
+
+.widget-wrap .carousel-control.left {
+    border-radius: 10px 0 0 10px;
+}
+
+.widget-wrap .carousel-control.right {
+    border-radius: 0 10px 10px 0;
+}
+
+.widget-wrap .carousel-control:hover, .carousel-control:focus {
+    color: #337ab7 !important;
+    font-size: 12px;
+    opacity: 1;
+    background-color: #E1E5EC !important;
+}
+
+.widget-wrap .carousel-caption {
+    position: relative;
+    left: 0;
+    text-shadow: none;
+    text-align: left;
+    color: #333;
+    padding-bottom: 0;
+}
+
+
+.widget-wrap .tab-content.invisible .tab-pane {
+    min-height: 0!important;
+    padding-top: 0 !important;
+    height: 0 !important;
+}
+
+
+.ballon-info td,
+.ballon-info div,
+.ballon-info span{
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.ballon-info .bln-desc {
+    padding-bottom: 2px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.ballon-info .bln-tbl-wrap {
+    margin: 0 -8px -4px -8px;
+}
+
+.ballon-info .bln-tbl-wrap table {
+    width: 100% !important;
+}
+
+.ballon-info td {
+    border: none;
+    border-top: 1px solid #d2cbde;
+    vertical-align: baseline;
+    padding:4px 0 4px;
+
+}
+
+.ballon-info td span.span-wrap {
+    padding: 0 8px;
+    display: block;
+}
+.ballon-info .bln-vall {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 14px;
+}
+
+
+
+.tooltip2 {
+    pointer-events:none; /*let mouse events pass through*/
+    opacity:0;
+    transition: opacity 0.3s;
+    display: block;
+    padding: 3px 8px;
+    border: 3px solid #dedede;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Open Sans",sans-serif;
+    background: #fff;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+
+
+.tooltip2.left>.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    right: -11px;
+    margin-top: -11px;
+    border-right-width: 0;
+    border-left-color: #999;
+    border-left-color: rgba(0, 0, 0, .25);
+}
+
+.tooltip2.left>.arrow:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    right: 1px;
+    border-right-width: 0;
+    border-left-color: #fff;
+    content: " ";
+    -bottom: -10px;
+    display: block !important;
+}
+
+
+.tooltip2.right>.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: -11px;
+    margin-top: -11px;
+    border-left-width: 0;
+    border-right-color: #999;
+    border-right-color: rgba(0, 0, 0, .25);
+}
+
+.tooltip2.right>.arrow:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    left: -1px;
+    border-left-width: 0;
+    border-right-color: #fff;
+    content: " ";
+    -bottom: -10px;
+    display: block !important;
+}
+
+
+.widget-wrap.col-md-9 .ballon-info .bln-middle,
+.widget-wrap.col-md-8 .ballon-info .bln-middle,
+.widget-wrap.col-md-7 .ballon-info .bln-middle,
+.widget-wrap.col-md-6 .ballon-info .bln-middle,
+.widget-wrap.col-md-6 .ballon-info .bln-mini,
+.widget-wrap.col-md-5 .ballon-info .bln-mini {
+    display: none;
+}
+
+.widget-wrap.col-md-6 .ballon-info .bln-tbl-wrap,
+.widget-wrap.col-md-5 .ballon-info .bln-tbl-wrap{
+    margin-top: -4px;
+}
+
+.widget-wrap.col-md-6 .ballon-info td,
+.widget-wrap.col-md-5 .ballon-info td{
+    border-top: none;
+}
+
+.small-chart .ballon-info {
+    max-width: 120px;
+}
+
+
+.widget-wrap table tbody tr td.tdchart {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    vertical-align: middle !important;
+    position: relative;
+
+}
+
+.widget-wrap .max-wait {
+    background: #e7505a;
+    background: -moz-linear-gradient(left, #e5acae 0%, #e7505a 100%);
+    background: -webkit-linear-gradient(left, #e5acae 0%,#e7505a 100%);
+    background: linear-gradient(to right, #e5acae 0%,#e7505a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5acae', endColorstr='#e7505a',GradientType=1 );
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+
+.widget-wrap .md-wait {
+    background: #F3C200;
+    background: -moz-linear-gradient(left, #f2e19d 0%, #f3c200 100%);
+    background: -webkit-linear-gradient(left, #f2e19d 0%,#f3c200 100%);
+    background: linear-gradient(to right, #f2e19d 0%,#f3c200 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e19d', endColorstr='#f3c200',GradientType=1 );
+    height: 100%;
+    width: 0;
+    min-height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+/*Partials Period*/
+
+.widget-wrap li .period-picker {
+    width: 100%;
+    display: block;
+}
+.widget-wrap li .period-picker .input-group-addon {
+    text-align: left;
+    width: 100%;
+    display: block;
+    border: none;
+    background: none;
+    color: #454545;
+    padding: 0;
+
+}
+
+
+
+.widget-wrap .bootstrap-datetimepicker-widget.dropdown-menu {
+    left: 80px !important;
+    top: 130px !important;
+    max-width: 270px !important;
+}
+
+.widget-wrap .bootstrap-datetimepicker-widget.dropdown-menu .row,
+.period-block-modal .bootstrap-datetimepicker-widget.dropdown-menu .row{
+    margin: 0;
+}
+.widget-wrap .bootstrap-datetimepicker-widget .datepicker,
+.period-block-modal .bootstrap-datetimepicker-widget .datepicker{
+    line-height: 1;
+
+}
+.widget-wrap .bootstrap-datetimepicker-widget,
+.period-block-modal .bootstrap-datetimepicker-widget {
+    font-size: 13px;
+
+}
+.widget-wrap .bootstrap-datetimepicker-widget table td.day,
+.period-block-modal .bootstrap-datetimepicker-widget table td.day {
+    height: 14px;
+    line-height: 14px;
+    width: 18px;
+
+}
+
+.widget-wrap .bootstrap-datetimepicker-widget .picker-switch td span,
+.period-block-modal .bootstrap-datetimepicker-widget .picker-switch td span{
+    line-height: 1.2;
+    height: 1em;
+}
+
+.widget-wrap .bootstrap-datetimepicker-widget .row .datepicker,
+.period-block-modal .bootstrap-datetimepicker-widget .row .datepicker{
+    width: 100%;
+}
+
+.widget-wrap .bootstrap-datetimepicker-widget .timepicker,
+.period-block-modal .bootstrap-datetimepicker-widget .timepicker{
+    padding-top: 0px;
+    width: 100%;
+}
+
+
+.widget-wrap .bootstrap-datetimepicker-widget .timepicker .timepicker-picker,
+.period-block-modal .bootstrap-datetimepicker-widget .timepicker .timepicker-picker {
+    display: none !important;
+}
+
+.widget-wrap .bootstrap-datetimepicker-widget .timepicker .timepicker-hours,
+.period-block-modal .bootstrap-datetimepicker-widget .timepicker .timepicker-hours{
+    display: block !important;
+    -overflow: hidden;
+    -height: 40px;
+    -overflow-y: scroll;
+}
+
+.widget-wrap .bootstrap-datetimepicker-widget .timepicker .timepicker-hours tr,
+.period-block-modal .bootstrap-datetimepicker-widget .timepicker .timepicker-hours tr{
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.widget-wrap .bootstrap-datetimepicker-widget .timepicker table td,
+.widget-wrap .bootstrap-datetimepicker-widget .timepicker table td span,
+.period-block-modal .bootstrap-datetimepicker-widget .timepicker table td,
+.period-block-modal .bootstrap-datetimepicker-widget .timepicker table td span{
+    height: 16px;
+    width: 30px;
+    line-height: 16px;
+}
+
+
+
+
+.period-block-modal .bootstrap-datetimepicker-widget {
+    top: 165px !important;
+    left: 30% !important;
+    max-width: 270px !important;
+}
+
+
+.period-scale {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+.period-scale .inner-period-info {
+    display: inline-block;
+    width: 250px;
+    padding: 0 5px;
+}
+
+
+.period-scale a {
+    position: absolute;
+    left: 50%;
+}
+
+.period-scale a.prev {
+    margin-left: -130px;
+}
+
+.period-scale a.next {
+    margin-left: 130px;
+}
+
+.period-scale a:hover:before,
+.period-scale a:focus:before {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    margin-left: -21px;
+    content: "";
+    width: 40px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.18);
+}
+
+
+.period-scale a.prev:hover:before,
+.period-scale a.prev:focus:before {
+    margin-left: -20px;
+}
+
+.period-scale a.next:hover:before,
+.period-scale a.next:focus:before {
+    margin-left: -21px;
+}
+
+
+/*Partials Multi select*/
+
+
+
+
+
+/*Widget user stat*/
+
+.userstat .carousel-caption {
+    bottom: 0;
+    padding-top: 0;
+}
+.userstat .fixed-table-container,
+.userstat .fixed-table-container td,
+.userstat .fixed-table-container th {
+    border: none;
+}
+
+.userstat .fixed-table-container th {
+    background: #f1f4f7;
+}
+
+.userstat .fa-circle {
+    opacity: 0.6;
+}
+
+.userstat .dashboard-stat {
+    padding: 3px 4px;
+    margin-bottom: 5px;
+}
+
+.userstat .dashboard-stat .visual {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 30px;
+    position: absolute;
+}
+
+.userstat .dashboard-stat .visual>i {
+    margin-left: -5px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.userstat .dashboard-stat .details {
+    padding: 0;
+    position: relative;
+    right: 0;
+}
+
+.userstat .dashboard-stat .details .number {
+    padding:0;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.userstat .dashboard-stat .details .desc {
+    font-size: 11px;
+}
+
+
+.userstat svg {
+    font-size: 10px;
+    font-family: "Open Sans",sans-serif;
+}
+.userstat .svg-text {
+    text-align: center;
+}
+
+.userstat .svg-text text {
+    white-space: nowrap;
+}
+
+.userstat .opt-treemap {
+    padding: 2px 12px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 2px;
+}

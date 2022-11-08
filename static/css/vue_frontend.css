@@ -1,0 +1,10 @@
+span.back-link a {
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  text-decoration: none;
+  color: #333;
+}
+span.back-link a:hover {
+  opacity: 0.8;
+}
