@@ -1,0 +1,92 @@
+/*Прячем панеь дебагера в ifram-е для тестовых доменов*/
+.phpdebugbar.phpdebugbar-minimized.phpdebugbar-closed {
+    display: none;
+}
+
+body {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.grafana-app .main-view,
+.grafana-app .panel-container {
+    background: none;
+}
+
+sidemenu.sidemenu,
+.css-1ghbj67 .css-1bpq4j8,
+.css-1ghbj67 .css-1hos3qg,
+.css-1ghbj67 div:nth-child(4) {
+    display: none
+}
+
+.submenu-item.gf-form-inline {
+    display: inline-block;
+}
+
+/* -- Vertical scroll -- */
+.dashboard-scroll .css-1wm65c2 .track-vertical {
+    position: static !important;
+    width: 18px !important;
+}
+
+.dashboard-scroll .css-1wm65c2 .track-vertical .thumb-vertical {
+    display: none !important;
+}
+
+.dashboard-scroll .graph-legend .css-1wm65c2 .track-vertical {
+    position: absolute !important;
+}
+/* -- /Vertical scroll -- */
+
+/* -- Spinner bounce -- */
+.modal-spinner {
+    padding: 15px;
+}
+
+.modal-spinner .spinner {
+    margin: 0 auto;
+    width: 70px;
+    text-align: center;
+}
+
+.modal-spinner .spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #4bccd8;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.modal-spinner .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.modal-spinner .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+/* ---- /spinner ---- */

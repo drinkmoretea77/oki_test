@@ -1,0 +1,139 @@
+.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] a{
+    color: #fff !important;
+}
+.holiday_bg .page-container {
+    -background: url("/img/pattern4.png") -100px -200px repeat !important;
+    -background: url("/img/pattern4_2.png") 0px 0px repeat !important;
+    background-image: url("/img/pattern4_2_1.jpg") !important;
+    background-attachment: fixed !important;
+    background-size: 100% 100%;
+}
+.holiday_bg .page-content,
+.holiday_bg #sort.portlet.portlet-fullscreen {
+    -background: url("/img/pattern4.png") -335px -200px repeat !important;
+    -background: url("/img/pattern4_2.png") 0px 0px no-repeat !important;
+    background-image: url("/img/pattern4_2_1.jpg") !important;
+    background-attachment: fixed !important;
+    background-size: 100% 100% !important;
+}
+.holiday_bg .form-control,
+.holiday_bg .btn.btn-default,
+.holiday_bg .select2-container .select2-selection,
+.holiday_bg .chat-form,
+.holiday_bg .chat-form .input-cont .form-control {
+    background: rgba(255,255,255,0.3)!important;
+}
+
+.bootstrap-switch .bootstrap-switch-label {
+    background: rgba(255,255,255,0.9)!important;
+}
+
+.holiday_bg .select2-dropdown{
+    background: rgba(255,255,255,0.9);
+}
+
+.holiday_bg  div.checker span {
+    opacity: 0.9;
+}
+
+.holiday_bg .btn.btn-default.active,
+.holiday_bg .page-content .nav-tabs>li.active>a{
+    background: rgba(240,240,240,0.7);
+}
+
+.holiday_bg form .btn-group .btn.btn-default.active,
+.holiday_bg .centerbut .btn-group .btn.btn-default.active,
+.holiday_bg .nav-pills .btn-group .btn.btn-default.active,
+.note.note-info .btn.btn-default.btn-xs.active {
+    background: #337ab7 !important;
+    color: #fff !important;
+    border-color: #337ab7 !important;
+}
+
+.holiday_bg .note.note-info,
+.holiday_bg .table-striped>tbody>tr:nth-of-type(odd),
+.holiday_bg .portlet.light,
+.holiday_bg .page-content .nav-tabs>li:hover>a{
+    background: rgba(255,255,255,0.5);
+}
+
+.holiday_bg .table-advance thead tr th,
+.holiday_bg .table-striped>tbody>tr:nth-of-type(even) {
+    background: rgba(241, 244, 247, 0.5);
+}
+
+.holiday_bg .table-striped.table-hover>tbody>tr:hover {
+    background: rgba(250,250,250,0.7)!important;
+}
+
+.holiday_bg .table-striped.table-hover>tbody>tr:hover td {
+    background: none !important;
+}
+
+.holiday_bg .panel.panel-success,
+.holiday_bg .panel.panel-default {
+    background: rgba(255,255,255,0.3);
+}
+.holiday_bg .portlet.light{
+    background: rgba(255,255,255,0.3);
+}
+
+.holiday_bg #sort.portlet.light {
+    background: rgba(255,255,255,0);
+}
+
+.holiday_bg .portlet.light.bg-inverse{
+    background: rgba(255,255,255, 0.3);
+}
+
+.holiday_bg .widget-wrap {
+    background: rgba(255,255,255, 0); !important;
+}
+
+.holiday_bg .widget-wrap:hover .portlet {
+    background: rgba(255,255,255, 0.6); !important;
+}
+
+.holiday_bg .fa-question-circle.help-icon {
+    color: #999;
+}
+
+/*THEME DARK*/
+
+.holiday_bg.dark_bg .font-green {
+    color: #29b0bc !important;
+}
+
+.holiday_bg.dark_bg .font-green-sharp {
+    color: #259ca7 !important;
+}
+
+.holiday_bg.dark_bg .font-grey-cascade {
+    color: #74898b !important;
+}
+
+.holiday_bg.dark_bg #dashboard .portlet.light .tools .font-default {
+    color: #545454 !important;
+}
+
+
+.holiday_bg.dark_bg .portlet.light .mt-comments .mt-comment .mt-comment-body .mt-comment-text {
+    color: #777;
+}
+
+.holiday_bg.dark_bg .portlet.light .mt-comments .mt-comment .mt-comment-body .mt-comment-info .mt-comment-date,
+.holiday_bg.dark_bg .portlet.light .mt-comments .mt-comment .mt-comment-details .font-default{
+    color: #999 !important;
+}
+
+.holiday_bg.dark_bg .portlet.light .mt-comments .mt-comment .mt-comment-details .label-default {
+    background-color: #777;
+}
+
+.holiday_bg.dark_bg .widget-wrap .carousel-control {
+    background: rgba(250,250,250,0.7)!important;
+}
+
+.holiday_bg.dark_bg .widget-wrap .carousel-control:hover, .carousel-control:focus {
+    background: rgba(225, 229, 236, 0.9)!important;
+}

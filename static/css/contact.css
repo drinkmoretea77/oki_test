@@ -1,0 +1,141 @@
+.contact_grid .panel-default {
+  border: 1px solid #ddd !important;
+}
+.contact_grid div[class^='col-md-'] {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  margin: 0;
+}
+.contact_grid div[class^='col-md-'] > span {
+  min-height: 1.2em;
+  display: inline-block;
+}
+.contact_grid div[class^='col-md-'] > span > label {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  color: #777;
+  font-size: 0.8em;
+}
+.contact_grid div[class^='col-md-'].menu_cell {
+  border-right: 0;
+  padding-right: 93px;
+}
+.contact_grid div[class^='col-md-'] small {
+  display: block;
+  color: #777;
+}
+.contact_grid .row,
+.contact_grid .panel-body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.contact_grid .subgrid {
+  margin: 0;
+  padding: 0 !important;
+}
+.contact_grid .row > div[class^='col-md-']:last-child {
+  border-right: 0;
+}
+.contact_grid .row:last-child > div[class^='col-md-'] {
+  border-bottom: 0;
+}
+.contact_grid label.offset_label {
+  right: 153px !important;
+}
+.contact_grid label.contact_type {
+  position: absolute;
+  bottom: -5px;
+  left: 11px;
+  color: #777;
+  font-size: 0.9em;
+}
+.contact_grid:not(.show_labels) div[class^='col-md-'] > span > label {
+  display: none;
+}
+.contact_grid:not(.show_labels) div[class^='col-md-']:hover > span > label {
+  display: inline-block;
+}
+.contact_grid .size-biggest {
+  font-size: 1.2em;
+}
+.contact_grid .size-bigger {
+  font-size: 1.1em;
+}
+.contact_grid .size-less {
+  font-size: 0.9em;
+}
+.contact_grid .size-least {
+  font-size: 0.8em;
+}
+.contact_grid .unused {
+  background-color: #e5e5e5;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(255,255,255,0.9) 1px, rgba(255,255,255,0.9) 12px);
+}
+.has-error .contact_grid .unused {
+  background-color: #ff7070;
+}
+.contact_grid .contact_actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.contact_grid .contact_actions .btn {
+  border-color: #eee !important;
+  border-top: 0;
+  box-shadow: none !important;
+  color: #aaa;
+}
+.contact_grid .contact_actions .btn:last-child {
+  border-right: 0;
+}
+.contact_grid .ribbon {
+  position: absolute;
+  top: -3px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+  box-shadow: -2px 2px 7px rgba(0,0,0,0.4);
+}
+.contact_grid .favorite {
+  right: 100px;
+  cursor: pointer;
+  background-color: #659be0;
+}
+.contact_grid .favorite:not(.active) {
+  display: none;
+  background-color: #fff;
+  color: #659be0;
+}
+.contact_grid .favorite:not(.active):hover {
+  background-color: #659be0;
+  color: #fff;
+}
+.contact_grid .favorite.active {
+  background-color: #659be0;
+  color: #fff;
+}
+.contact_grid .favorite.active:hover {
+  background-color: #fff;
+  color: #659be0;
+}
+.contact_grid .active_contact {
+  right: 150px;
+  background-color: #f1c40f;
+}
+.contact_grid:hover .favorite:not(.active) {
+  display: inline-block;
+}
+.contact_search_name_clear {
+  position: absolute;
+  top: 10px;
+  right: 55px;
+  z-index: 3;
+  font-size: 16px;
+  color: #b0b0b0;
+  cursor: pointer;
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000px"
+   height="1000px"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="257.36641"
+     inkscape:cy="810.28565"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1-0"
+     showgrid="false"
+     inkscape:window-width="1460"
+     inkscape:window-height="809"
+     inkscape:window-x="92"
+     inkscape:window-y="134"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4310"
+       cx="455"
+       cy="159.3622"
+       r="54" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <g
+       style="display:inline;stroke:#ffffff;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="layer1-0"
+       inkscape:label="Layer 1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         style="fill:#cc0000;fill-opacity:1;stroke:#ffffff;stroke-width:3.18084429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.31438194,0,0,0.31438194,209.82332,54.124084)"
+         id="g6139">
+        <path
+           style="fill:#cc0000;fill-opacity:1;stroke:#ffffff;stroke-width:3.18084429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path6141"
+           d="m 781.72993,-17.265411 c -196.8,0 -356.29798,159.498041 -356.29798,356.298051 0,38.3 6.102,75.30066 17.302,109.90065 8.2,25.20001 19.0987,49.19945 32.39868,71.69947 l 306.5973,442.10008 306.60357,-442.19948 c 13.3,-22.40001 24.1986,-46.39948 32.3986,-71.69947 11.2,-34.59999 17.3021,-71.50064 17.3021,-109.90065 0,-196.70001 -159.50427,-356.198651 -356.30427,-356.198651 z m 0,182.997951 c 93.9,0 170.0012,76.10122 170.0012,170.00121 0,93.89999 -76.1012,170.00121 -170.0012,170.00121 -93.9,0 -169.995,-76.10122 -169.995,-170.00121 0,-93.89999 76.095,-170.00121 169.995,-170.00121 z m -28.0995,50.9432 0,85.77719 -86.4544,0 0,59.21215 86.4544,0 0,85.77099 57.6342,0 0,-85.77099 86.6718,0 0,-59.21215 -86.6718,0 0,-85.77719 -57.6342,0 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text6149"
+         y="204.81746"
+         x="319.39175"
+         style="font-style:normal;font-weight:normal;font-size:116.13156128px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="204.81746"
+           x="319.39175"
+           id="tspan6151"
+           sodipodi:role="line" /></text>
+    </g>
+  </g>
+</svg>

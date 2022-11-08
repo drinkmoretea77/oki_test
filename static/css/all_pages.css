@@ -1,0 +1,251 @@
+#support-tickets .new_ticket_form {
+  margin: 15px 20px;
+}
+#support-tickets .chats li {
+  font-size: 14px;
+  overflow: auto /* это хак, чтоб родительский контейнер float-элементов не "схлопывался" */;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+#support-tickets .chats li.is_continued {
+  margin: 0 auto;
+  padding: 0;
+}
+#support-tickets .chats li .message {
+  clear: both;
+  background: none;
+}
+#support-tickets .chats li .message .comment_content {
+  position: relative;
+}
+#support-tickets .chats li .message .comment_content .comment_action {
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  margin-top: -20px;
+}
+#support-tickets .chats li > div {
+  clear: both;
+}
+#support-tickets .chats li.in .message {
+  position: relative;
+  margin-left: 0;
+  padding-right: 40%;
+}
+#support-tickets .chats li.out .message {
+  position: relative;
+  margin-right: 0;
+  float: right;
+  padding-left: 40%;
+}
+#support-tickets .chats li.out .message .body {
+  clear: both;
+  text-align: left;
+}
+#support-tickets .chats li.out .message .body.body_short {
+  text-align: right;
+}
+#support-tickets .chats li .body a {
+  word-break: break-all;
+}
+#support-tickets .chats li.hidden_comment .message {
+  background-color: #f0f0f0;
+}
+#support-tickets .chats li.out.hidden_comment .message {
+  border-right: 2px solid #525e64;
+}
+#support-tickets .chats li.in.hidden_comment .message {
+  border-left: 2px solid #525e64;
+}
+#support-tickets .chats li .message .name {
+  font-weight: bold;
+}
+#support-tickets .chats li .edit_comment:not(.edited_comment) {
+  display: none;
+}
+#support-tickets .chats li:hover .edit_comment {
+  display: inline;
+  cursor: pointer;
+}
+#support-tickets .chats li .show_reactions {
+  cursor: pointer;
+}
+#support-tickets .chats li .reactions_container {
+  margin-left: 10px;
+}
+#support-tickets .chats li .reactions_container i {
+  font-size: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#support-tickets .chats li .reactions_container i:hover {
+  opacity: 1;
+}
+#support-tickets .chats li .reactions_display {
+  font-size: 16px;
+  margin-left: 5px;
+}
+#support-tickets .todo-container > .alert {
+  margin: 15px 20px;
+}
+#support-tickets .todo-tasks-container {
+  padding: 0 20px;
+  border: none;
+}
+#support-tickets .todo-tasks-container .todo-tasks-content {
+  clear: both;
+}
+#support-tickets .todo-tasks-container > .loading_spinner {
+  font-size: 28px;
+  margin-top: 40px;
+  text-align: center;
+}
+#support-tickets .todo-tasks-container .todo-tasks-item {
+  padding: 10px 0;
+}
+#support-tickets .todo-tasks-container .todo-tasks-item h4.todo-inline {
+  margin-bottom: 5px;
+}
+#support-tickets .todo-tasks-container .todo-tasks-item h4.todo-inline > a {
+  color: #337ab7;
+  text-decoration: none;
+}
+#support-tickets .todo-tasks-container .todo-tasks-item h4.todo-inline > a:focus,
+#support-tickets .todo-tasks-container .todo-tasks-item h4.todo-inline > a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+#support-tickets .todo-tasks-container .todo-tasks-item p.block {
+  clear: both;
+}
+#support-tickets .todo-tasks-container .todo-tasks-item .timeago {
+  margin-left: 5px;
+}
+#support-tickets .todo-tasks-container .alert-report {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#support-tickets .todo-tasks-container .ticket_filters > * {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#support-tickets .todo-tasks-container .ticket_filters .btn-group-circle > button {
+  padding: 6px 11px 5px;
+  opacity: 0.7;
+}
+#support-tickets .todo-tasks-container .ticket_filters .input-icon > i {
+  margin-top: 8px;
+  cursor: pointer;
+}
+#support-tickets .todo-tasks-container .ticket_filters .header_switch {
+  font-size: 14px;
+  cursor: pointer;
+  color: #9eacb4;
+}
+#support-tickets .todo-tasks-container .ticket_filters .header_switch .switchery {
+  margin-left: 5px;
+}
+#support-tickets .ticket_type_icon {
+  opacity: 0.6;
+}
+#support-tickets .modal-content {
+  height: 100%;
+}
+#support-tickets .modal-header button {
+  margin-top: -2px;
+}
+#support-tickets .modal-header .disconnected {
+  padding: 5px 7px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+#support-tickets .modal-body {
+  padding-top: 0;
+}
+#support-tickets .modal-body .panel {
+  margin: 20px 0 20px 20px;
+}
+#support-tickets .modal-body .panel .form-group {
+  margin-bottom: 0;
+}
+#support-tickets .modal-body .panel .form-group .fa-spinner {
+  font-size: 20px;
+}
+#support-tickets .modal-body h3.todo-task-modal-bg a.font-grey-cascade {
+  display: none;
+}
+#support-tickets .modal-body h3.todo-task-modal-bg:hover a.font-grey-cascade {
+  display: inline;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#support-tickets .modal-footer .socicon-btn {
+  margin-left: 5px;
+  padding-top: 5px;
+  height: 34px;
+  border: 0;
+}
+#support-tickets .modal-footer .socicon-btn:hover {
+  color: #1c699f !important;
+}
+#support-tickets .portlet .alert {
+  clear: both;
+}
+#support-tickets .portlet .chat-form .text-right .btn {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#support-tickets .break-all {
+  word-break: break-all;
+}
+#support-tickets .review_panel .row {
+  margin-top: 10px;
+}
+#support-tickets .review_panel .row label {
+  font-size: 16px;
+}
+#support-tickets .review_panel textarea {
+  margin-top: 5px;
+}
+#support-tickets .review_panel .fa {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#support-tickets .review_panel .emoji {
+  font-size: 24px;
+  margin-right: 10px;
+  padding: 4px;
+  cursor: pointer;
+}
+#support-tickets .review_panel .emoji.selected {
+  box-shadow: inset 0 0 0 4px #e87e04;
+}
+#support-tickets .review_panel .review_description {
+  font-size: 16px;
+}
+#support_tickets_icon a:hover,
+#support_tickets_icon a:focus {
+  background-color: #3f4f62;
+}
+#support_tickets_icon i {
+  color: #c6cfda;
+  font-size: 17px;
+}
+#support_tickets_icon .badge {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  top: 10px;
+  font-weight: 300;
+  padding: 3px 6px;
+}
+#support_tickets_icon .badge.bg-red-flamingo {
+  left: 5px;
+}
+#support_tickets_icon .badge.bg-yellow-lemon {
+  right: 5px;
+}
+.bootstrap-growl {
+  z-index: 15000 !important;
+}

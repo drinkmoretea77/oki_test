@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+	<head {{ HEAD_ATTRS }}>
+		<!-- BEGIN GLOBAL MANDATORY STYLES -->
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/socicon.css" rel="stylesheet" type="text/css">
+		<link href="/metronic/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/global/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- EDITABLE-->
+		<link href="/metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+		<link href="/metronic/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
+		<link href="/metronic/global/plugins/bootstrap-colorpicker/css/colorpicker.css"  rel="stylesheet">
+		<link href="/metronic/global/plugins/jquery-minicolors/jquery.minicolors.css"  rel="stylesheet">
+		<link href="/metronic/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/select2/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/select2/css/select2-bootstrap.min.css">
+		<!-- END GLOBAL MANDATORY STYLES -->
+		<!-- BEGIN THEME GLOBAL STYLES --> 
+		<link href="/metronic/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css"/>
+		<link href="/metronic/global/css/plugins-md.min.css" rel="stylesheet" type="text/css"/>
+		<!-- END THEME GLOBAL STYLES -->
+		<!-- BEGIN THEME LAYOUT STYLES -->
+		<link href="/metronic/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color"/>
+		<link href="/metronic/global/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css"/>
+		<!-- END THEME LAYOUT STYLES -->
+		<link href="/metronic/apps/css/todo.min.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico"/>
+		<link href="/css/tipped.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/switchery.min.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/style.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/tickets.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/holidays_theme.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/widgets.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/animate.min.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/jquery.floatingscroll.css" rel="stylesheet" type="text/css"/>
+		<link href="/metronic/global/plugins/jquery-nestable/jquery.nestable.css" rel="stylesheet" type="text/css" />
+		<link href="/jplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css"/>
+		<!-- codemirror -->
+		<link rel="stylesheet" href="/metronic/global/plugins/codemirror/lib/codemirror.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/theme/ambiance.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/theme/abcdef.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/theme/dracula.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/theme/icecoder.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/theme/material.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/theme/vibrant-ink.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/theme/zenburn.css">
+		<link rel="stylesheet" type="text/css" href="/metronic/global/plugins/codemirror/addon/fold/foldgutter.css" />
+        <link rel="stylesheet" type="text/css" href="/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+        <link rel="stylesheet" type="text/css" href="/metronic/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+        <link href="/metronic/global/plugins/bootstrap-datetimepicker-2/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+		<style>
+			.page-content-wrapper.history-hide .page-content .col-md-9.main-right-side-content {
+				width: 100%;
+				-webkit-transition: width 200ms ease-in, opacity 1.5s ease-out;
+				-moz-transition: width 200ms ease-in, opacity 1.5s ease-out;
+				-o-transition: width 200ms ease-in, opacity 1.5s ease-out;
+				transition: width 200ms ease-in, opacity 1.5s ease-out;
+			}
+			.page-content-wrapper.history-hide .page-content .col-md-3.right-side-content {
+
+				right: -25%;
+				display: none;
+				-webkit-transition: all 1s ease-in-out;
+				-moz-transition: all 1s ease-in-out;
+				-o-transition: all 1s ease-in-out;
+				transition: all 1s ease-in-out;
+			}
+
+			#companies_sidebar #search-company {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				width: 260px;
+			}
+
+			#companies_sidebar #search-company input {
+				background: none;
+				border-color: #99a8b5;
+				color: #99a8b5;
+				height: 30px;
+				font-size: 13px;
+			}
+
+			.popover-content {
+				padding: 4px 8px;
+				color: #454545;
+			}
+
+			.popover>.arrow, .popover>.arrow:after {
+				display: block !important;
+			}
+		</style>
+
+		<style>
+			.page-sidebar-closed .page-sidebar-menu .nav-item .sub-menu.page-sidebar-menu.page-sidebar-menu-hover-submenu{
+				width: 210px !important;
+				position: absolute !important;
+				z-index: 2000 !important;
+				left: 46px !important;
+				margin-top: 0 !important;
+				top: 100% !important;
+			}
+
+			.page-sidebar-closed .page-sidebar-menu .nav-item .sub-menu.page-sidebar-menu.page-sidebar-menu-hover-submenu .sub-menu{
+				width: 210px !important;
+				position: absolute !important;
+				z-index: 2000 !important;
+				left: 210px !important;
+				margin-top: 0 !important;
+				top: 0 !important;
+			}
+
+			.page-sidebar-closed .page-sidebar-menu .nav-item .sub-menu.page-sidebar-menu.page-sidebar-menu-hover-submenu li {
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 210px !important;
+			}
+
+			.page-sidebar-closed .page-sidebar-menu .nav-item .sub-menu.page-sidebar-menu.page-sidebar-menu-hover-submenu .nav-item.start .title {
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.page-sidebar-closed .page-sidebar-menu .nav-item .sub-menu.page-sidebar-menu.page-sidebar-menu-hover-submenu .nav-item.start .arrow {
+				display: block !important;
+			}
+
+		</style>
+
+		{{ HEAD }}
+	</head>
+	<body class="position-relative page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md holiday_bg ttt dark_bg {{ BODY_ATTRS }}">
+	{{ APP }}
+    <script src="/metronic//global/plugins/moment.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script src="/metronic/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/jquery-slimscroll/jquery.slimscroll.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/clipboardjs/clipboard.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/jquery-nestable/jquery.nestable.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js"></script>
+	<script src="/metronic/global/plugins/bootstrap-toastr/toastr.min.js" type="text/javascript"></script>
+	<!-- EDITABLE-->
+	<script src="/metronic/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js"></script>
+	<script src="/metronic/global/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/jquery-minicolors/jquery.minicolors.min.js" type="text/javascript"></script>
+	<script src="/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/wysihtml5.js" type="text/javascript"></script>
+	<!-- END CORE PLUGINS -->
+	<!-- BEGIN THEME GLOBAL SCRIPTS -->
+	<script src="/metronic/global/scripts/app.min.js" type="text/javascript"></script>
+	<!-- END THEME GLOBAL SCRIPTS -->
+	<!-- BEGIN THEME LAYOUT SCRIPTS -->
+	<script src="/metronic/layouts/layout/scripts/layout.min.js?upd=01.06.2020" type="text/javascript"></script>
+	<script src="/metronic/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+	<script src="/js/quick-sidebar.js" type="text/javascript"></script>
+	<!-- codemirror -->
+	<script src="/metronic/global/plugins/codemirror/lib/codemirror.js"></script>
+	<script src="/metronic/global/plugins/codemirror/mode/javascript/javascript.js"></script>
+	<script src="/metronic/global/plugins/codemirror/addon/hint/show-hint.js"></script>
+	<script src="/metronic/global/plugins/codemirror/addon/hint/javascript-hint.js"></script>
+	<script src="/metronic/global/plugins/codemirror/addon/fold/foldcode.js"></script>
+	<script src="/metronic/global/plugins/codemirror/addon/fold/foldgutter.js"></script>
+	<script src="/metronic/global/plugins/codemirror/addon/fold/brace-fold.js"></script>
+	<script src="/metronic/global/plugins/codemirror/addon/fold/xml-fold.js"></script>
+	<script src="/metronic/global/plugins/codemirror/addon/fold/comment-fold.js"></script>
+    <script src="/metronic/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/metronic/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+
+
+	<!-- END THEME LAYOUT SCRIPTS -->
+	<script src="/js/jquery.timeago.js" type="text/javascript"></script>
+	<script src="/js/jquery.timeago.ru.js" type="text/javascript"></script>
+	<script src="/js/tipped.js" type="text/javascript"></script>
+	<script src="/js/switchery.min.js" type="text/javascript"></script>
+	<script src="/js/all.js" type="text/javascript"></script>
+	<script src="/js/jquery.floatingscroll.min.js" type="text/javascript"></script>
+	<script src="/jplayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	</body>
+</html>
