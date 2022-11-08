@@ -61,7 +61,7 @@ export const actions = {
         { commit, state },
         { req, route, error, redirect, $api }
     ) {
-        if (route.path === '/n/test-login') return;
+        if (route.path === '/n/login') return;
 
         try {
             const { data, error } = await $api.get('/a/layout/default');
