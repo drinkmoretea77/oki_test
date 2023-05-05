@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const host = process.env.NUXT_HOST || 'localhost';
-const port = process.env.NUXT_PORT || 80;
+const port = process.env.NUXT_PORT || 3000;
 const mock = process.env.NUXT_MOCK || false;
 
 const plugins = [
