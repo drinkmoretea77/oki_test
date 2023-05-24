@@ -79,19 +79,11 @@
 </template>
 
 <script lang="ts">
-import { mapState } from 'vuex';
 import ProjectObject from '~/components/projects/ProjectObject.vue';
 
 import { Context } from '@nuxt/types';
-import { DefaultForm, Project } from '~/types';
 import Vue from 'vue';
 import { routes } from '~/api';
-
-interface EditForm {
-    title: any;
-    load: boolean;
-    editForm: DefaultForm;
-}
 
 export default Vue.extend({
     navigation: 'projects',
@@ -106,11 +98,20 @@ export default Vue.extend({
         ProjectObject,
     },
 
-    async fetch({ store, params }: Context) {
-        return await store.dispatch('project/get', params);
+    async asyncData({ $api, params }: Context): Promise<any> {
+        let project: any = null;
+        try {
+            const { data } = await $api.get(routes.projects.a_projects_new_get + '/' + params.id);
+            if (data?.project) project = data.project;
+        } catch (e) {
+            console.log(e)
+        }
+        return {
+            project
+        }
     },
 
-    data(): EditForm {
+    data(): any {
         return {
             title: '',
             load: false,
@@ -142,12 +143,6 @@ export default Vue.extend({
         });
         this.title =
             this.$t('Редактирование проекта') + ' ' + (this.project.name || '');
-    },
-
-    computed: {
-        ...mapState({
-            project: ({ project }: any): Project => project.project,
-        }),
     },
 
     methods: {
