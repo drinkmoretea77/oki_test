@@ -74,12 +74,14 @@
             v-for="object in project.objects"
             :key="object.name"
             v-bind="object"
+            @save-object="handleSaveObject"
         />
     </div>
 </template>
 
 <script lang="ts">
 import ProjectObject from '~/components/projects/ProjectObject.vue';
+import { deepCopyObject } from '~/shared/utils';
 
 import { Context } from '@nuxt/types';
 import Vue from 'vue';
@@ -99,16 +101,18 @@ export default Vue.extend({
     },
 
     async asyncData({ $api, params }: Context): Promise<any> {
-        let project: any = null;
+        let projectFromAPI: any = null;
         try {
-            const { data } = await $api.get(routes.projects.a_projects_new_get + '/' + params.id);
-            if (data?.project) project = data.project;
+            const { data } = await $api.get(
+                routes.projects.a_projects_new_get + '/' + params.id
+            );
+            if (data?.project) projectFromAPI = data.project;
         } catch (e) {
-            console.log(e)
+            console.log(e);
         }
         return {
-            project
-        }
+            projectFromAPI,
+        };
     },
 
     data(): any {
@@ -132,7 +136,26 @@ export default Vue.extend({
                     },
                 },
             },
+            projectUpdatedByChild: null,
         };
+    },
+
+    computed: {
+        project(): any {
+            return this.projectUpdatedByChild || this.projectFromAPI;
+        },
+    },
+
+    watch: {
+        projectFromAPI: {
+            /* always reset projectUpdatedByChild when projectFromAPI changes */
+            handler(newResult, oldResult) {
+                if (oldResult !== null) {
+                    this.projectUpdatedByChild = null;
+                }
+            },
+            immediate: false,
+        },
     },
 
     created() {
@@ -174,6 +197,18 @@ export default Vue.extend({
                     }
                 );
             });
+        },
+        handleSaveObject(objectToSave: any) {
+            this.projectUpdatedByChild = deepCopyObject(this.project);
+            const index = this.projectUpdatedByChild.objects.findIndex(
+                (obj: any) => obj.name === objectToSave.name
+            );
+            if (index !== -1) {
+                this.projectUpdatedByChild.objects[index] = Object.assign(
+                    this.projectUpdatedByChild.objects[index],
+                    objectToSave
+                );
+            }
         },
     },
 });
